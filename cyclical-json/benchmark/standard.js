@@ -1,17 +1,17 @@
 var tmp;
-var testCases = {};
+var testCases = [];
 
-testCases['0'] = {
+testCases[0] = {
 	desc: 'An Empty Object',
 	val: {}
 };
 
-testCases['1'] = {
+testCases[1] = {
 	desc: 'An Empty Array',
 	val: []
 };
 
-testCases['2'] = {
+testCases[2] = {
 	desc: 'A large flat object',
 	val: {
 		a: true,
@@ -53,7 +53,7 @@ tmp = (function () {
 	return arr;
 })();
 
-testCases['3'] = {
+testCases[3] = {
 	desc: 'A large array of unique objects',
 	val: tmp
 };
@@ -68,7 +68,7 @@ tmp = (function () {
 	return arr;
 })();
 
-testCases['3'] = {
+testCases[4] = {
 	desc: 'A large array of identical objects',
 	val: tmp
 };
@@ -81,7 +81,7 @@ tmp = (function () {
 	return obj;
 })();
 
-testCases['4'] = {
+testCases[5] = {
 	desc: 'A simple cyclical object',
 	val: tmp
 };
@@ -108,7 +108,7 @@ tmp = (function () {
 	return arr;
 })();
 
-testCases['4'] = {
+testCases[6] = {
 	desc: 'A deeply nested cyclical array',
 	val: tmp
 };
@@ -152,7 +152,7 @@ tmp.c.b.b = tmp.b.b;
 tmp.a.b.b = tmp.b.b;
 
 
-testCases['5'] = {
+testCases[7] = {
 	desc: 'A deeply nested cyclical obj',
 	val: tmp
 };
