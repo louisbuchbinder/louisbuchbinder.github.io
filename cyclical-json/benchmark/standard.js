@@ -47,7 +47,7 @@ tmp = (function () {
 	var arr = [];
 
 	for (var i = 0; i < 10; i++) {
-		arr.push(Object.create(testCases['2'].val));
+		arr.push(Object.assign(testCases[2].val));
 	}
 
 	return arr;
@@ -62,7 +62,7 @@ tmp = (function () {
 	var arr = [];
 
 	for (var i = 0; i < 1000; i++) {
-		arr.push(testCases['2'].val);
+		arr.push(testCases[2].val);
 	}
 
 	return arr;
